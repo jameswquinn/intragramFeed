@@ -5,13 +5,7 @@ var feed = new Instafeed({
         template: '<a href="{{link}}"><img src="{{image}}" /></a>',
 		target: 'instagram',
 		resolution: 'standard_resolution',
-		after: function() {
-			var el = document.getElementById('instagram');
-			if (el.classList)
-				el.classList.add('show');
-			else
-				el.className += ' ' + 'show';
-		}
+		after: function() {}
 });
 
 window.onload = function() {
