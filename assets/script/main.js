@@ -2,7 +2,7 @@ var feed = new Instafeed({
 		get: 'user',
 		userId: 1280170021,
 		accessToken: '1280170021.1677ed0.e9a6e8b385dc4002a5218422f3c5bb64',
-        template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+        	template: '<a href="{{link}}"><img src="{{image}}" /></a>',
 		target: 'instagram',
 		resolution: 'standard_resolution',
 		after: function() {
@@ -13,3 +13,19 @@ var feed = new Instafeed({
 				el.className += ' ' + 'show';
 		}
 });
+
+window.onload = function() {
+	feed.run();
+
+	var _gauges = _gauges || [];
+	(function() {
+		var t   = document.createElement('script');
+		t.type  = 'text/javascript';
+		t.async = true;
+		t.id    = '';
+		t.setAttribute('data-site-id', '4d5aa2a95ffe1f587b000001');
+		t.src = '//secure.gaug.es/track.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(t, s);
+	})();
+};
