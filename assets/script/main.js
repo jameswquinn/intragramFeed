@@ -14,6 +14,7 @@ var feed = new Instafeed({
 		}
 });
 
+/*
 window.onload = function() {
 	feed.run();
 
@@ -29,3 +30,4 @@ window.onload = function() {
 		s.parentNode.insertBefore(t, s);
 	})();
 };
+*/
