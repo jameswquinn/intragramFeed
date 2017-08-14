@@ -13,7 +13,7 @@ var feed = new Instafeed({
 				el.className += ' ' + 'show';
 		}
 });
-
+/*
 window.onload = function() {
 	feed.run();
 
@@ -29,3 +29,4 @@ window.onload = function() {
 		s.parentNode.insertBefore(t, s);
 	})();
 };
+*/
