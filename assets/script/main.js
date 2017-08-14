@@ -14,4 +14,7 @@ var feed = new Instafeed({
 		}
 });
 
+window.onload = function() {
+	feed.run();
 
+};
